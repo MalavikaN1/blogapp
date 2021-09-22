@@ -1,0 +1,73 @@
+<!--Beginning of header-->
+<div id="header" class="nav-collapse nav-solid">
+  <div class="row clearfix">
+    <div class="col-1">
+      <!--Logo-->
+      <div id="logo">
+       
+
+        <!--The Logo that is shown on the Navigation Bar-->
+        <img
+          src="https://static.wixstatic.com/media/8f7814_80ba085a77664d18b9ae292b95039713~mv2.png/v1/fill/w_560,h_566,al_c,q_85,usm_0.66_1.00_0.01/digital%20diaries_newlogo.webp"
+          id="navigation-logo"
+          alt="Landing Page"
+        />
+        <!--End of Navigation Logo-->
+      </div>
+      <!--End of Logo-->
+      <aside>
+        <app-social></app-social>
+      </aside>
+
+      <!--Main Navigation-->
+      <nav id="nav-main">
+        <ul>
+          <li>
+            <a
+              routerLink="/Home"
+              (click)="getActiveTab('home')"
+              [class.active]="activetab === 'home'"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/About"
+              (click)="getActiveTab('about')"
+              [class.active]="activetab === 'about'"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/Blogs"
+              (click)="getActiveTab('services')"
+              [class.active]="activetab === 'services'"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/Clients"
+              (click)="getActiveTab('clients')"
+              [class.active]="activetab === 'clients'"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/Pricing"
+              (click)="getActiveTab('pricing')"
+              [class.active]="activetab === 'pricing'"
+              >SignUp</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!--End of Main Navigation-->
+      <div id="nav-trigger"><span></span></div>
+      <nav id="nav-mobile"></nav>
+    </div>
+  </div>
+</div>
+<!--End of Header-->
